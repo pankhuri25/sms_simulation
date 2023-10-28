@@ -10,9 +10,10 @@ All the configurations are present in `app-config.yml`
 It will automatically download all the base images and will launch the necessary services. A Docker daemon has to be running for it. 
 Download the Docker Desktop from here:
 https://www.docker.com/products/docker-desktop/
+
 Please see here for more details - https://docs.docker.com/compose/ 
 
-Respective launched applications can be found at
+Respective launched applications can be found at:
 
 •	Kafka - <localhost:9092> (Inside containers it will be accessible as <kafka:29092>)
 
@@ -21,3 +22,5 @@ Respective launched applications can be found at
 •	Elasticsearch - http://localhost:9200/ 
 
 •	Kibana - http://localhost:5601/ (Please import [‘export.ndjson’] file in Kibana to import dashboard analysis.)
+
+There is a `requirements.txt` file which includes all the libraries and dependencies used with versions. These will be automatically installed when Docker is composed.
