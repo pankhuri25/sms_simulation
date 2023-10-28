@@ -1,0 +1,14 @@
+# Kafka
+bootstrap_servers: kafka:29092
+partition_count: 2
+replication_factor: 1
+client_id: sms_producer1
+kafka_topic: sms_topic12
+consumer_group_id: sms_consumer_group2
+max_poll_interval_ms: 30000 #(millis) Maximum time needed by a consumer to process message
+no_of_msgs_in_batch: 1000
+consumer_random_wait_time_params: [1, 0.5] # (mean, std_dev) in seconds
+consumer_random_failure_rate_params: [10, 5] # (mean, std_dev) % failure rate
+
+#Logstash
+logstash_server: logstash:5959

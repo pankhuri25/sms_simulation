@@ -1,0 +1,5 @@
+python-logstash==0.4.8
+kafka-python==2.0.2
+PyYAML==6.0
+loguru==0.7.2
+python-logstash==0.4.8
