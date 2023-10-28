@@ -35,7 +35,7 @@ logger = init_logger()
 # Generate a random SMS message
 def generate_random_sms():
     phone_number = "".join(random.choices(string.digits, k=10))
-    message = "".join(random.choices(string.ascii_letters + string.digits, k=random.randint(1, 100))
+    message = "".join(random.choices(string.ascii_letters + string.digits, k=random.randint(1, 100)))
     message_id = str(uuid.uuid4())
     return {"phone_number": phone_number, "message": message, 'message_id': message_id}
 

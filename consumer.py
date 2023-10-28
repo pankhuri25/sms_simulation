@@ -31,7 +31,7 @@ logger = init_logger()
 consumer_random_wait_time_params = props['consumer_random_wait_time_params']
 consumer_random_failure_rate_params = props['consumer_random_failure_rate_params']
 consumer_failure_rate = int(random.gauss(*consumer_random_failure_rate_params))
-failure_msgs_index = set(random.sample(range(100), consumer_failure_rate)
+failure_msgs_index = set(random.sample(range(100), consumer_failure_rate))
 message_count = 0
 
 # Create a function to generate log data for messages
