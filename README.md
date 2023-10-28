@@ -10,11 +10,12 @@ The simulation consists of three parts:
   sending messages by waiting a random period of time distributed around a configurable mean.
   Senders also have a configurable failure rate.
   3. A progress monitor that displays the following and updates it every N seconds (configurable):
-      a. Number of messages sent so far
-      b. Number of messages failed so far
-      c. Average time per message so far
+      •	Number of messages sent so far
+      •	Number of messages failed so far
+      •	Average time per message so far
 One instance each for the producer and the progress monitor will be started while a variable number of
-senders can be started with different mean processing time and error rate settings. 
+senders can be started with different mean processing time and error rate settings.
+
 ### How to run
 
 The project is set in a docker-containerized environment and can be easily launched using the command:
